@@ -11,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  @override
+ 
   List<PostModel> PostList = [];
   Future<List<PostModel>> getPostApi() async {
     final response = await http.get(
@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
       return PostList;
     }
   }
-
+  @override
   Widget build(BuildContext context) {
     final screnWidth = MediaQuery.of(context).size.width;
     final screnHeight = MediaQuery.of(context).size.height;
@@ -51,8 +51,19 @@ class _HomeScreenState extends State<HomeScreen> {
                       return ListView.builder(
                         itemCount: PostList.length,
                         itemBuilder: (context, index) {
-                          return Text(
-                            PostList[index].title.toString(),
+                          return Card(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Text("user Id"),
+                                Text(PostList[index].userId.toString()),
+                                Text("tilte"),
+                                Text(PostList[index].title.toString()),
+                                Text("body"),
+                                Text(PostList[index].body.toString()),
+                              ],
+                            ),
+                           
                           );
                         },
                       );

@@ -1,4 +1,5 @@
 import 'package:first_app/Intropage.dart';
+import 'package:first_app/firstpage.dart';
 import 'package:first_app/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       //home: HomeScreen(),
-      home: Intropage(),
+      //home: Intropage(),
+      home: Firstpage(),
     );
   }
 }

@@ -31,6 +31,9 @@ class _HomeScreenState extends State<HomeScreen> {
       return PostList;
     }
   }
+
+
+  
   @override
   Widget build(BuildContext context) {
     final screnWidth = MediaQuery.of(context).size.width;

@@ -21,9 +21,9 @@ class _HomeScreenState extends State<HomeScreen> {
       response.body.toString(),
     );
     if (response.statusCode == 200) {
-      for (Map i in data) {
+      for (Map<String, dynamic> i in data) {
         PostList.add(
-          PostModel.fromJson(i as Map<String, dynamic>),
+          PostModel.fromJson(i),
         );
       }
       return PostList;

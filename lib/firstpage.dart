@@ -20,7 +20,7 @@ class _FirstpageState extends State<Firstpage> {
       Uri.parse('https://jsonplaceholder.typicode.com/users'),
     );
     var data = jsonDecode(response.body.toString());
-
+  
     if (response.statusCode == 200) {
       for (Map i in data)
         postList.add(ShotModel.fromJson(i as Map<String, dynamic>));

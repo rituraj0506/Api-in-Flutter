@@ -1,0 +1,72 @@
+// ignore_for_file: file_names
+
+class ApiEndPoints {
+  //static const String baseUrl = "https://verifyapi.in/node";
+  static const String baseUrl = "http://192.168.22.154:8002";
+  // ignore: library_private_types_in_public_ap i
+  static _AuthEndPoints authEndPoint = _AuthEndPoints();
+}
+
+class _AuthEndPoints {
+
+  final String loginEmail='/signIn';
+  final String signUp='/createUser';
+  final String getAllUser='/getAllUsers';
+  final String createUser='/createUser';
+  final String getUserByUserId='/getUserByUserId';
+  final String getUserDetails='/getUserDetails';
+  final String getUserLoginLogs='/getUserLoginLogs';
+  final String deleteUserbyUserId='/deleteUserByUserId';
+  final String getActiveServicebyId='/getUserServicesByUserId';
+  final String getAreaDetailsByPinCode='/getAreaDetailsByPinCode';
+  final String getAllAvailablePackageSetupNames='/getAllAvailablePackageSetupNames';
+  final String getAllAvailableServiceTypeByPackageName='/getAllAvailableServiceTypeByPackageName';
+  final String getAllTransactionHistory='/getAllTransactionHistory';
+  final String getAllTransactionHistoryforUser='/getAllTransactionHistoryforUser';
+  final String getAllUserPayments='/getAllUserPayments';
+  final String getAdminBankDetails='/getAdminBankDetails';
+  final String createBankDetails='/createBankDetails';
+  final String getAllPayments='/getAllPayments';
+  final String updatePaymentByPaymentId='/updatePaymentByPaymentId';
+  final String getAllApiParties='/getAllApiParties';
+  final String getApiOperatorsNamesByServiceId='/getApiOperatorsNamesByServiceId';
+  final String changePrimaryByServiceIdAndApiOperatorName='/changePrimaryByServiceIdAndApiOperatorName';
+  final String getAllPackageSetup='/getAllPackageSetup';
+  final String getAllServiceList="/getAllServicesNames";
+  final String createPackageSetup="/createPackageSetup";
+  final String getPrimaryApiInputKeysByServiceName="/getPrimaryApiInputKeysByServiceName";
+  final String getAdminSaveAs="/getAdminSaveAs";
+  final String createPayment="/createPayment";
+
+
+  final String verifyOkycOtpLite="/verifyOkycOtpLite";
+
+
+  final String sendOtp="/sendOtp";
+  final String verifyOtp="/verifyOtp";
+  final String changePassword = "/changePassword";
+
+  final String updateUserApiKeyByUserId="/updateUserApiKeyByUserId";
+  final String getUserApiKeyByUserId="/getUserApiKeyByUserId";
+  final String updateUserWhiteListIp="/updateUserWhiteListIp";
+  final String getUserWhiteListIpByUserId="/getUserWhiteListIpByUserId";
+  final String getUserGraphStats="/getUserGraphStats";
+  final String getAdminGraphStats="/getAdminGraphStats";
+  final String getUserApiHitCountStats="/getUserApiHitCountStats";
+  final String getAdminApiHitCountStats="/getAdminApiHitCountStats";
+  final String updateUserByUserId="/updateUserByUserId";
+
+  //Bank Api
+
+  final String updateStatusByBankId="/updateStatusByBankId";
+  final String deleteBankDetailsByBankId="/deleteBankDetailsByBankId";
+
+  // Package Api
+  final String updatePackageSetupByPackageId = '/updatePackageSetupByPackageId';
+
+  final String getPackageByPackageId='/getPackageByPackageId';
+  final String deletePackageSetupByPackageId='/deletePackageSetupByPackageId';
+  final String resetPassword='/resetPassword';
+
+
+}
